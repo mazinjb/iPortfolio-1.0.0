@@ -37,6 +37,13 @@
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
+/* Change primary color to green */
+:root {
+  --primary: #28a745; /* Bootstrap green */
+  --primary-hover: #218838;
+  --accent: #28a745;
+}
+
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
@@ -157,6 +164,11 @@ h6 {
   border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+.header,
+.header.dark-background {
+  background: #218838 !important;
+}
+
 .header .profile-img img {
   margin: 15px auto;
   display: block;
@@ -201,8 +213,8 @@ h6 {
 }
 
 .header .social-links a:hover {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: #fff !important;
+  background: #28a745 !important;
 }
 
 @media (min-width: 1200px) {
@@ -309,7 +321,7 @@ h6 {
 .navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus {
-  color: var(--nav-hover-color);
+  color: #28a745 !important;
 }
 
 .navmenu a:hover .navicon,
@@ -522,6 +534,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #28a745 !important;
 }
 
 .section-title h2:after {
@@ -715,7 +728,7 @@ section,
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: var(--accent-color);
+  background-color: #28a745 !important;
 }
 
 /*--------------------------------------------------------------
