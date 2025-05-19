@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
   <meta charset="utf-8">
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="index-page" style="direction: rtl; text-align: right;">
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -75,7 +75,20 @@
                 <li><a href="#">Deep Dropdown 2</a></li>
                 <li><a href="#">Deep Dropdown 3</a></li>
                 <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
+                <li><a href="#">Deep                /* دعم الاتجاه من اليمين لليسار */
+                body, html {
+                  direction: rtl !important;
+                  text-align: right !important;
+                }
+                .navmenu ul {
+                  padding-right: 0;
+                }
+                .navmenu li {
+                  float: right;
+                }
+                .section-title, .container, .row, .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12 {
+                  text-align: right !important;
+                } Dropdown 5</a></li>
               </ul>
             </li>
             <li><a href="#">Dropdown 2</a></li>

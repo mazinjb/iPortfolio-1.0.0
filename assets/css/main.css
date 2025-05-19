@@ -73,6 +73,12 @@ body {
   font-family: var(--default-font);
 }
 
+/* دعم الاتجاه من اليمين لليسار */
+body, html {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -274,6 +280,7 @@ h6 {
   list-style: none;
   padding: 0 0 20px 0;
   margin: 0;
+  padding-right: 0;
 }
 
 .navmenu a,
@@ -371,6 +378,10 @@ h6 {
 .navmenu .dropdown>.dropdown-active {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
+}
+
+.navmenu li {
+  float: right;
 }
 
 /*--------------------------------------------------------------
@@ -526,6 +537,7 @@ section,
 .section-title {
   padding-bottom: 60px;
   position: relative;
+  text-align: right !important;
 }
 
 .section-title h2 {
@@ -586,6 +598,7 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  text-align: right !important;
 }
 
 .hero h2 {
@@ -1285,4 +1298,8 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.container, .row, .col-lg-4, .col-lg-6, .col-lg-8, .col-lg-12 {
+  text-align: right !important;
 }
